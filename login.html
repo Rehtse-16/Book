@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- 9 -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/css/Book.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;1,400;1,700&display=swap');
+    </style>
+</head>
+<body class="bod">
+ <div class="log">
+    <form action="">
+        <h1 id="title">Register</h1>
+        <div class="input-box" id="nameField">
+            <input type="text" placeholder="First Name" required>
+        </div>
+        <div class="input-box" id="nameFold">
+            <input type="text" placeholder="Last Name" required>
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder="Email" required>
+        </div>
+        
+       <div class="input-box">
+            <input type="text" placeholder="Enter Username" required>
+            <i class='bx bxs-user'></i>
+        </div> 
+        <div class="input-box">
+            <input type="password" placeholder="Enter Password" required>
+            <i class='bx bxs-lock'></i>
+        </div>
+        <div class="input-box" id="pass">
+            <input type="password" placeholder="Re-enter Password" required>
+            <i class='bx bxs-lock'></i>
+        </div>
+        <div class="remember-me">
+           <label> <input type="checkbox"> Remember Me</label>
+           <a href="#"> Forgot Password?</a>
+        </div>
+        <div class="btn-field">
+            <button type="button"  id="but"> Register</button>
+            <button type="button" id="butIN" class="disable">Login</button>
+        </div>
+    </form>
+ </div>
+<script src="log.js"></script>
+<!-- <script>
+    let butIN = document.getElementById("butIN");
+    let but = document.getElementById("but");
+    let nameField= document.getElementById("nameField");
+    let nameFold= document.getElementById("nameFold");
+    let pass= document.getElementById("pass");
+    let title= document.getElementById("title");
+  
+    butIN.onclick = function(){
+        nameField.style.maxHeight = '0';
+        nameFold.style.maxHeight= '0'
+        pass.style.maxHeight= '0'
+        
+        title.innerHTML = 'Sign In';
+        but.classList.add("disable")
+        butIN.classList.remove("disable")
+    }
+    but.onclick = function(){
+        nameField.style.maxHeight = '60px';
+        nameFold.style.maxHeight= '60px'
+        pass.style.maxHeight= '60px'
+        
+        title.innerHTML = 'Register';
+        but.classList.remove("disable")
+        butIN.classList.add("disable")
+    }
+</script> -->
+</body>
+</html>
