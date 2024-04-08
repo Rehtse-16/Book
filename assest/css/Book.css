@@ -386,6 +386,7 @@
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+
 }
 
 @media screen and (max-width: 480px){
@@ -411,7 +412,94 @@
         margin: 2.5rem 0;
     }
 }
+/* Services Section */
+.services{
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+.services h1{
+    background: #c0392b;  /* fallback for old browsers */
+    background: linear-gradient(to right, #8e44ad 0%, #c0392b 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+.servicewrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.servicecard{
+    margin: 10px ;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #4faee6 0%, #18418f 100%);
+    transition: 0.3s ease-in;
+}
+.servicecard:nth-child(2){
+    background: #FF0099;  /* fallback for old browsers */
+    background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.servicecard:nth-child(3){
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+.servicecard h2{
+    text-align: center;
+}
+.servicecard p{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+.servicesbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.servicecard button{
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+.servicecard button:hover{
+    cursor: pointer;
+}
+.servicecard:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+    .servicewrap{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px){
+    .servicewrap{
+        grid-template-columns: 1fr;
+    }
+}
 .bod{
     display: flex;
     justify-content: center;
