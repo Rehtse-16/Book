@@ -500,6 +500,8 @@
         grid-template-columns: 1fr;
     }
 }
+
+
 .bod{
     display: flex;
     justify-content: center;
